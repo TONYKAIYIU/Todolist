@@ -32,7 +32,7 @@ function onTodoClicked(event){
     if (checkbox.checked){
         targetElement.classList.add("completed")
     } else {
-        targetElement.classList.remove("complete")
+        targetElement.classList.remove("completed")
     }
 }
 

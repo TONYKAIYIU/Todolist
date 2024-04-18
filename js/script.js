@@ -1,9 +1,9 @@
-console.log("Scropt Loaded");
+console.log("Script Loaded");
 
 //1. Assgin variables to DOM elements
-let addTaskButton = document.getElementById("add-button");
-let newTaskInput = document.getElementById("task-input");
-let todoContainer = document.getElementById("todo-list");
+let addTaskButton = document.getElementById("add-button")
+let newTaskInput = document.getElementById("task-input")
+let todoContainer = document.getElementById("todo-list")
 
 //2. Write function to handle the events
 function onAddTaskClicked(event){

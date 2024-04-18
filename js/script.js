@@ -19,7 +19,7 @@ function onAddTaskClicked(event){
     let todoHTML = template.replace("<!-- TASK_NAME -->", taskName)
 
     //We have the formatted HTML, lets insert it into the todo container
-    todoContainer.insertAdjacentHTML("afterbegin", taskName)
+    todoContainer.insertAdjacentHTML("afterbegin", todoHTML)
 }
 
 //3. Link element, event to the function

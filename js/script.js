@@ -23,16 +23,16 @@ function onAddTaskClicked(event){
 }
 
 function onTodoClicked(event){
-    let targetElement = event.toElement
+    let targetElement = event.target;
 
     while(!targetElement.classList.contains("task")) {
-        targetElement = targetElement.parentElement
+        targetElement = targetElement.parentElement;
     }
-    let checkbox = targetElement.querySelector(".checkbox")
+    let checkbox = targetElement.querySelector(".checkbox");
     if (checkbox.checked){
-        targetElement.classList.add(".completed")
+        targetElement.classList.add("completed");
     } else {
-        targetElement.classList.remove(".completed")
+        targetElement.classList.remove("completed");
     }
 }
 

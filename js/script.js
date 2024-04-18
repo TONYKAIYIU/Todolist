@@ -22,5 +22,21 @@ function onAddTaskClicked(event){
     todoContainer.insertAdjacentHTML("afterbegin", todoHTML)
 }
 
+function onTodoClicked(event){
+    let targetElement = event.toElement
+
+    while(!targetElement.classList.contains("task")) {
+        targetElement = targetElement.parentElement
+    }
+    let checkbox = targetElement.querySelector(".checkbox")
+    if (checkbox.checked){
+        targetElement.classList.add("completed")
+    } else {
+        targetElement.classList.remove("complete")
+    }
+}
+
+
 //3. Link element, event to the function
 addTaskButton.addEventListener('click',onAddTaskClicked)
+todoContainer.addEventListener('click', onTodoClicked)
